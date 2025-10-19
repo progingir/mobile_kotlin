@@ -25,10 +25,8 @@
 
 - Темная и светлая тема
 
-<img width="559" height="1027" alt="image" src="https://github.com/user-attachments/assets/ec615174-49c6-4ba3-aa51-6b97f0178968" />
-<img width="577" height="1025" alt="image" src="https://github.com/user-attachments/assets/353fc29c-4107-4927-a559-8f6f528c5bca" />
+<img width="559" height="1027" alt="image" src="https://github.com/user-attachments/assets/ec615174-49c6-4ba3-aa51-6b97f0178968" /> <img width="577" height="1025" alt="image" src="https://github.com/user-attachments/assets/353fc29c-4107-4927-a559-8f6f528c5bca" />
 
-    
 - Добавление аватара
     
 <img width="534" height="1029" alt="image" src="https://github.com/user-attachments/assets/57e0745e-c58e-426a-9002-8cb8bc425aed" />
