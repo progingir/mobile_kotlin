@@ -8,46 +8,45 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = DarkContrastPrimary,
+    primary = GreenDarkTheme,
     onPrimary = Color.Black,
-    secondary = DarkContrastSecondary,
+
     onSecondary = Color.Black,
-    tertiary = DarkContrastTertiary,
+    tertiary = AccentGrey,
     onTertiary = Color.Black,
 
-    background = DarkContrastBackground,
-    onBackground = DarkContrastOnBackground,
-    surface = DarkContrastSurface,
-    onSurface = DarkContrastOnBackground,
-    surfaceVariant = Color(0xFF2C2C2C),
+    background = AppDarkBackground,
+    onBackground = AppWhite,
+    surface = AppBlack,
+    onSurface = AppWhite,
+    surfaceVariant = AccentGrey,
     onError = Color.Black,
-    error = Color(0xFFCF6679)
+    error = ErrorColor
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = GreenLightTheme,
+    onPrimary = AppWhite,
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    onSecondary = AppBlack,
+    tertiary = AccentGrey,
+    onTertiary = AppBlack,
+    surfaceVariant = AccentGrey,
+
+    background = AppOffWhite,
+    onBackground = AppBlack,
+    surface = AppWhite,
+    onSurface = AppBlack,
 )
 
 @Composable
 fun Kotlin_yandexTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
