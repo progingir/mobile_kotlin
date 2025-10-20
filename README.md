@@ -33,4 +33,3 @@
 
 - Альбомная ориентация
 <img width="1090" height="474" alt="image" src="https://github.com/user-attachments/assets/8b5eef95-cf62-4305-849c-922adbf0d574" />
-<img width="1090" height="218" alt="image" src="https://github.com/user-attachments/assets/a4740ccb-6473-4aa7-8739-c1263d562092" />
