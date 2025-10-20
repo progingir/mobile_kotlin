@@ -5,7 +5,9 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.*
@@ -31,6 +33,8 @@ fun UserForm() {
     var isSubscribed by rememberSaveable { mutableStateOf(false) }
     var summary by rememberSaveable { mutableStateOf("") }
     var avatarUri by rememberSaveable { mutableStateOf<Uri?>(null) }
+
+    val scrollState = rememberScrollState()
 
     val genderMaleLabel = stringResource(R.string.gender_male)
     val genderFemaleLabel = stringResource(R.string.gender_female)
@@ -61,7 +65,8 @@ fun UserForm() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(16.dp)
+            .verticalScroll(scrollState),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
