@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "kotlin_yandex"
+rootProject.name = "Homework2"
 include(":app")

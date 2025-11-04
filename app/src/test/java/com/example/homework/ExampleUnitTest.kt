@@ -1,4 +1,4 @@
-package com.kotlin_yandex
+package com.example.homework
 
 import org.junit.Test
 

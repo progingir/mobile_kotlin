@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    namespace = "com.kotlin_yandex"
+    namespace = "com.example.homework"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.kotlin_yandex"
-        minSdk = 28
+        applicationId = "com.example.homework2"
+        minSdk = 32
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -47,11 +47,15 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
-    implementation(libs.coil.compose)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.compose.foundation)
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.compose.ui.text)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,5 +63,6 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-
+    debugImplementation(libs.androidx.ui.tooling)
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 }

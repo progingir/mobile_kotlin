@@ -1,4 +1,4 @@
-package com.kotlin_yandex.ui.theme
+package com.example.homework.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -8,45 +8,24 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = GreenDarkTheme,
-    onPrimary = Color.Black,
-
-    onSecondary = Color.Black,
-    tertiary = AccentGrey,
-    onTertiary = Color.Black,
-
-    background = AppDarkBackground,
-    onBackground = AppWhite,
-    surface = AppBlack,
-    onSurface = AppWhite,
-    surfaceVariant = AccentGrey,
-    onError = Color.Black,
-    error = ErrorColor
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = GreenLightTheme,
-    onPrimary = AppWhite,
-
-    onSecondary = AppBlack,
-    tertiary = AccentGrey,
-    onTertiary = AppBlack,
-    surfaceVariant = AccentGrey,
-
-    background = AppOffWhite,
-    onBackground = AppBlack,
-    surface = AppWhite,
-    onSurface = AppBlack,
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
 )
 
 @Composable
-fun Kotlin_yandexTheme(
+fun GalleryTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = false,
+    dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
